@@ -16,6 +16,17 @@ jobs:
           - os: windows-2022
             platform: win32
             arch: x64
+          - os: windows-2022
+            platform: win32
+            arch: arm64
+          - os: ubuntu-22.04
+            platform: linux
+            arch: x64
+            container: ubuntu:22.04
+          - os: ubuntu-22.04-arm
+            platform: linux
+            arch: arm64
+            container: ubuntu:22.04
     runs-on: ${{ matrix.os }}
     container: ${{ matrix.container }}
     name: Build / ${{ matrix.platform }}-${{ matrix.arch }}${{ matrix.tags }}
