@@ -1759,7 +1759,7 @@ udx_native_exports (js_env_t *env, js_value_t *exports) {
   V("offsetof_udx_stream_t_inflight", offsetof(udx_stream_t, inflight));
   V("offsetof_udx_stream_t_mtu", offsetof(udx_stream_t, mtu));
   V("offsetof_udx_stream_t_cwnd", offsetof(udx_stream_t, cwnd));
-  V("offsetof_udx_stream_t_srtt", offsetof(udx_stream_t, srtt));
+  V("offsetof_udx_stream_t_srtt_ns", offsetof(udx_stream_t, srtt_ns));
   V("offsetof_udx_stream_t_bytes_rx", offsetof(udx_stream_t, bytes_rx));
   V("offsetof_udx_stream_t_packets_rx", offsetof(udx_stream_t, packets_rx));
   V("offsetof_udx_stream_t_bytes_tx", offsetof(udx_stream_t, bytes_tx));
